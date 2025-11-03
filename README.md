@@ -1,46 +1,44 @@
-##Projekt číslo 3: Election Scraper 
+**Projekt 3: Elections scraper**
 
-  
+**Popis projektu** 
 
-##Popis 
+Cílem projektu je vyscrapovat data z webu voleb do PSPČR proběhlých v roce 2017. Konkrétně sew měly vytáhnout údaje z konkrétních územních celků a získat tak přehled o počtu voličů, vydaných obálkách nebo platných hlasech v jednotlivích obcích.  
 
-Cílem projektu je vyscrapovat z webu voleb do PSPČR výsledky za libovolnou obec.  
+Do projektu jsem si vybral okres Olomouc a obce z něj.
 
-Do projektu jsem si vybral obce v okrese Olomouc. 
-
-Odkaz: Výsledky hlasování za územní celky – výběr obce | volby.cz 
+**Odkaz:** https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7102
 
    
 
-Potřebné knihovny: 
+**Potřebné knihovny**
 
-Potřebné knihovny, které jsem musel doinstalovat jsou uloženy ve složce requirements.txt.  Bylo nutné vytvořit si virtuální prostředí a nainstalovat balíčky. 
-
- 
-
-Projekt 
-
-Pro spuštění projektu jsou třeba 2 povinné argumenty 
-
-url územního celku 
-
-Soubor.csv 
+Knihovny, které jsem musel doinstalovat jsou uloženy ve složce [requirements.txt](url).  Bylo nutné vytvořit si virtuální prostředí a nainstalovat balíčky. 
 
  
 
-Argument 1: python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7102"  
+**Projekt**
 
-Argument 2: "vysledky_olomouc_final.csv" 
+Pro spuštění projektu jsou třeba 2 povinné argumenty, které se zadávají do terminálu
+
+- url územního celku 
+
+- soubor.csv 
 
  
 
-Jak program spustit 
+**Argument 1:** python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7102"  
+
+**Argument 2:** "vysledky_olomouc_final.csv" 
+
+ 
+
+**Jak program spustit** 
 
 python main.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7102" "vysledky_olomouc_final.csv" 
 
  
 
-Ukázka výstupu: 
+**Ukázka výstupu**
 
 500496,Olomouc,0,682,457,38,0,0,38,0,21,34,11,4,2,1,1,36,1,10,153,0,1,66,0,1,0,3,31,1 
 
